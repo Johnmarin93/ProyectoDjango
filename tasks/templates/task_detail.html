@@ -13,9 +13,6 @@
       <form method="POST">
         {% csrf_token %}
         {{form.as_p}}
-      <button class="btn btn-primary">
-        Actualiar
-      </button>
     </form>
 
       <div class="mt-5 d-flex">
@@ -23,7 +20,7 @@
       
       <form action="{% url 'complete_task' task.id %}" method="POST">
         {% csrf_token %}
-        <button class="btn btn-secondary">
+        <button class="btn btn-primary">
           Completar
         </button>
       </form>
